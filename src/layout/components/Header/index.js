@@ -25,6 +25,7 @@ import routesConfig from '~/config/routes';
 import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
+const currentUser = false;
 
 function Header() {
     const MENU_ITEMS = [
@@ -92,8 +93,6 @@ function Header() {
             className: 'logout',
         },
     ];
-
-    const currentUser = true;
 
     return (
         <header className={cx('wrapper')}>
@@ -174,7 +173,7 @@ function Header() {
                         Upload
                     </Button>
                     {currentUser ? (
-                        <>
+                        <div>
                             <Tippy placement="bottom" content="Messages" interactive="true">
                                 <button className={cx('action-btn')}>
                                     <FontAwesomeIcon icon={faPaperPlane} />
@@ -185,7 +184,7 @@ function Header() {
                                     <FontAwesomeIcon icon={faMessage} />
                                 </button>
                             </Tippy>
-                        </>
+                        </div>
                     ) : (
                         <>
                             <Button primary>Log in</Button>
@@ -209,5 +208,5 @@ function Header() {
         </header>
     );
 }
-
+export { currentUser };
 export default Header;

@@ -1,0 +1,90 @@
+.container {
+    width: 356px;
+}
+
+.wrapper {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    width: 356px;
+    padding: 20px 0 20px 8px;
+    overscroll-behavior: contain;
+    overflow-y: scroll;
+    perspective-origin: right top;
+    background: rgba(255, 255, 255, 1);
+    z-index: 999;
+}
+
+.recommend-follow {
+    margin-left: 8px;
+    .text-recommend {
+        color: rgba(22, 24, 35, 0.5);
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .login-btn {
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+}
+
+.label {
+    display: block;
+    padding: 0 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 600;
+}
+
+.line {
+    height: 0.5px;
+    width: 95%;
+    background-color: rgba(22, 24, 35, 0.07);
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.discover {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .title {
+        display: inline;
+    }
+    margin-top: 16px;
+    margin-left: 8px;
+}
+
+.footer {
+    margin-right: 6px;
+    margin-left: 8px;
+
+    div {
+        margin-bottom: 8px;
+    }
+
+    a {
+        cursor: pointer;
+        margin-right: 8px;
+        color: rgba(22, 24, 35, 0.5);
+        font-family: ProximaNova;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        display: inline-block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    span {
+        color: rgba(22, 24, 35, 0.5);
+        font-family: ProximaNova;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        display: inline-block;
+    }
+}

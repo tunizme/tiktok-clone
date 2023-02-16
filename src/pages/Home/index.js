@@ -1,9 +1,10 @@
+import classNames from 'classnames/bind';
+import styles from './Home.module.scss';
+import Posts from '~/layout/components/Posts';
+const cx = classNames.bind(styles);
+
 function Home() {
-    return (
-        <h2>
-            Home prtrageHome prtrageHome prtrageHome prtrageHome prtrageHome prtrageHome prtrageHome prtrageHome prtrage
-        </h2>
-    );
+    return <Posts />;
 }
 
 export default Home;

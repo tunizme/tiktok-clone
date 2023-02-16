@@ -1,0 +1,68 @@
+.wrapper {
+    width: 320px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 4px 8px;
+    border-radius: 8px;
+}
+
+.header-preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.follow-btn {
+    padding: 10px;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    margin-top: 8px;
+}
+
+.name {
+    h3 {
+        font-family: Sofiapro;
+        font-size: 1.8rem;
+        color: rgb(22, 24, 35);
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
+
+.username {
+    font-size: 1.4rem;
+    color: rgb(22, 24, 35);
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.count-user {
+    display: flex;
+    margin-top: 8px;
+    font-size: 1.7rem;
+}
+
+.followers,
+.likes {
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.count-follow {
+    margin-right: 10px;
+}
+
+.count-follow,
+.count-like {
+    span + span {
+        color: rgba(22, 24, 35, 0.75);
+    }
+}

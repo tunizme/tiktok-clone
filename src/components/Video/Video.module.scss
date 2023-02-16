@@ -1,0 +1,111 @@
+.container-control {
+    position: relative;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover .controls {
+        visibility: visible;
+    }
+    .video {
+        width: 100%;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        video {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+
+.image-preview {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.volume {
+    display: flex;
+    color: var(--white);
+    position: absolute;
+    right: 20px;
+    bottom: 32px;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.volume:hover .volume-input {
+    display: block;
+}
+
+.volume-input {
+    display: none;
+    width: 24px;
+    height: 64px;
+    margin-bottom: 8px;
+    position: relative;
+    cursor: initial;
+    background: rgba(22, 24, 35, 0.34);
+    border-radius: 32px;
+}
+
+.control-progress {
+    width: 2px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.34);
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    bottom: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.control-circle {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    position: absolute;
+    left: 6px;
+    bottom: 8px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.control-bar {
+    width: 2px;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 11px;
+    bottom: 8px;
+    cursor: pointer;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+    border-radius: 4px;
+}
+
+.volume-icon {
+    svg {
+        font-size: 2rem;
+    }
+}
+
+.controls {
+    visibility: hidden;
+    color: var(--white);
+    position: absolute;
+    bottom: 28px;
+    left: 16px;
+    cursor: pointer;
+    svg {
+        font-size: 1.8rem;
+        padding: 4px 8px;
+    }
+}

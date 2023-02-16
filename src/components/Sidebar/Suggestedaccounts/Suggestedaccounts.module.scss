@@ -1,0 +1,65 @@
+//Account item
+.accounts-wrapper {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 8px;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: rgb(22, 24, 35);
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: -2px;
+    max-width: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    svg {
+        margin-left: 6px;
+        color: rgb(32, 213, 236);
+    }
+}
+.username {
+    color: rgba(22, 24, 35, 0.75);
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+//
+
+.more-btn {
+    display: block;
+    color: rgb(254, 44, 85);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}

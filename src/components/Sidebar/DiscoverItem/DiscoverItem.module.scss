@@ -1,0 +1,28 @@
+.wrapper {
+    width: fit-content;
+    display: flex;
+    max-width: 100%;
+    height: 24px;
+    margin-bottom: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(22, 24, 35, 0.2);
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+    margin-right: 8px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.text {
+    padding-left: 6px;
+    font-family: ProximaNova;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}

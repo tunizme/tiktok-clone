@@ -1,0 +1,135 @@
+.wrapper {
+    width: 592px;
+    max-width: 592px;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container-avatar {
+    height: max-content;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content {
+    margin-left: 12px;
+    width: 624px;
+    flex: 1 1 624px;
+}
+
+.info {
+    width: fit-content;
+    a {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.name {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nickname {
+    font-family: SofiaPro;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 4px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    svg {
+        font-size: 1.5rem;
+        margin-left: 4px;
+        color: rgb(32, 213, 236);
+    }
+}
+
+.fullname {
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 28px;
+}
+
+.follow-btn {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container-video {
+    display: flex;
+    margin-top: 10px;
+}
+
+.container-description {
+    margin-right: 50px;
+    margin-bottom: 4px;
+    a {
+        display: inline-block;
+        margin-right: 8px;
+        font-weight: 600;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 8px;
+}
+
+.music {
+    svg {
+        font-size: 1.5rem;
+        margin-right: 8px;
+    }
+}
+
+.interact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
+    button {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        background-color: transparent;
+        flex-direction: column;
+        cursor: pointer;
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 6px;
+            border-radius: 50%;
+            background-color: rgba(22, 24, 35, 0.06);
+            svg {
+                font-size: 2.2rem;
+            }
+        }
+        strong {
+            font-family: ProximaNova;
+            color: rgba(22, 24, 35, 0.75);
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+        }
+    }
+}
